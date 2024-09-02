@@ -1,0 +1,245 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    background-size: cover;
+    color: black;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #0077cc;
+    font-size: 90%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.sidebar h1 {
+    margin-top: 0;
+    padding: 1px;
+}
+
+.sidebar p {
+    margin-bottom: 20px;
+}
+
+.sidebar .social-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar .social-icons a {
+    display: inline-block;
+}
+
+.sidebar .social-icons img {
+    width: 75px;
+    height: 75px;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f0f8ff;
+}
+
+.about-us {
+    position: relative;
+    z-index: 1;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.company-info {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.team-member-info {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.company-info h1, .company-info h2, .company-info p, .company-info ul {
+    margin: 20px 0;
+}
+
+.company-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.company-info ul li {
+    margin-bottom: 10px;
+}
+
+.company-info ul li strong {
+    color: black;
+}
+
+#preloader {
+    background: #000 url('preloader.mp4') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+    
+    .main-content {
+        margin-left: 200px;
+    }
+    
+    .team-container {
+        gap: 15px;
+    }
+    
+    .team-member {
+        width: 180px;
+    }
+    
+    .sidebar .social-icons img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+    
+    .team-container {
+        gap: 10px;
+    }
+    
+    .team-member {
+        width: 150px;
+    }
+    
+    .sidebar .social-icons img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    .team-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .team-member {
+        width: 100%;
+    }
+    
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .sidebar .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+}

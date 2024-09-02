@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Plan</title>
+    <link rel="icon" href="/Gallery/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Post.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/login/index.html" class="logo-container">
+            <img src="/Gallery/Logo.jpg" alt="Logo" class="logo">
+            <span class="logo-name">CabShare 24/7</span>
+        </a>
+        <div class="header-sections">
+            <a href="/login/dashboard.html" class="section">Home Page</a>
+            <a href="/ChatBox/chat.html" class="section">Chat Box</a>
+            <a href="/login/index.html" class="section">Logout</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="form">
+            <h2>Post Plan Form</h2>
+            <form id="postForm">
+                <div class="inputbox">
+                    <input type="text" id="username" readonly required>
+                    <span>Username</span>
+                </div>
+                <div class="inputbox">
+                    <select id="university" required>
+                        <option value="disabled selected">Select University</option>
+                        <option value="IIT Bombay">IIT Bombay</option>
+                        <option value="IIT Madras">IIT Madras</option>
+                        <option value="IISc Bangalore">IISc Bangalore</option>
+                        <option value="IIM Ahmedabad">IIM Ahmedabad</option>
+                        <option value="VIT Vellore">VIT Vellore</option>
+                        <option value="VIT Chennai">VIT Chennai</option>
+                        <option value="VIT AP">VIT AP</option>
+                        <option value="VIT Bhopal">VIT Bhopal</option>
+                        <option value="SRM Chennai">SRM Chennai</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <select id="fromState" required>
+                        <option value="disabled selected">Select University</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and
+                            Diu</option>
+                        <option value="Delhi (National Capital Territory)">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+
+
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <select id="fromCity" required>
+                        <option value="" disabled selected>Select From City</option>
+                        <!-- Cities will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <select id="fromPlace" required>
+                        <option value="" disabled selected>Select From Place</option>
+                        <!-- Places will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <select id="toState" required>
+                        <option value="disabled selected">Select University</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and
+                            Diu</option>
+                        <option value="Delhi (National Capital Territory)">Delhi (National Capital Territory)</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+
+
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <select id="toCity" required>
+                        <option value="" disabled selected>Select To City</option>
+                        <!-- Cities will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <select id="toPlace" required>
+                        <option value="" disabled selected>Select To Place</option>
+                        <!-- Places will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <input type="datetime-local" id="dateTime" required>
+                </div>
+                <div class="inputbox">
+                    <textarea id="message" placeholder="Enter your message here..." required></textarea>
+                </div>
+                <input type="submit" value="Post your plan">
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="tick">&#10004;</div>
+        <div class="message">Your post was successfully submitted!</div>
+    </div>
+
+    <script type="module" src="Post.js"></script>
+</body>
+
+</html>

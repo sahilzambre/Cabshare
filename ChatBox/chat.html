@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CabShare 24/7 - Chat</title>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js"></script>
+  <link rel="icon" href="/Gallery/Logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="/Gallery/Logo.jpg" alt="CabShare Logo">
+      <h1>CabShare 24/7</h1>
+    </div>
+    <div class="header-sections">
+      <a href="/login/dashboard.html" class="section">Go Back</a>
+    </div>
+  </div>
+
+  <div class="chat-container">
+    <div class="sidebar">
+      <input type="text" id="search-input" placeholder="Search users by username">
+      <div id="user-list"></div>
+    </div>
+    <div class="chatbox">
+      <div id="chat-header">
+        <h2 id="chat-username">Select a user to start chatting</h2>
+      </div>
+      <div id="chat-messages"></div>
+      <div id="chat-input">
+        <input type="text" id="message-input" placeholder="Type a message">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="chat.js"></script>
+</body>
+</html>
