@@ -100,7 +100,7 @@ function fetchPlans(filters = {}) {
                 }
 
                 // Redirect to chatbox
-                window.location.href = `chat.html?chatWith=${username}`;
+                window.location.href = `ChatBox/chat.html?chatWith=${username}`;
             });
         });
 
